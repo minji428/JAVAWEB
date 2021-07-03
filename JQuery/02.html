@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Insert title here</title>
+
+        <!--jQuery라이브러리를 사이트에서 직접 참조한 형태-->
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                // 아이디가 btn인 객체의 클릭을 감지
+                // $ 또는 jQuery 둘 다 허용하나 보통 $를 사용
+                // jQuery('#btn').click(function(){
+                //     alert("버튼 눌림");
+                // })
+                $("#btn").click(function(){
+			        alert("버튼 눌림");
+		        });	
+            });
+        </script>
+    </head>
+
+    <body>
+        <input type="button" id="btn" value="버튼">
+    </body>
+</html>

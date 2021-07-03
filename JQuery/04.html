@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Insert title here</title>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(bt1_click);
+                $("#btn2").click(bt2_click);
+            });
+
+            var bt1_click = function(){
+                alert("버튼1 클릭");
+            }
+
+            function bt2_click(){
+                alert("버튼2 클릭");
+            }
+        </script>
+    </head>
+
+    <body>
+        <input type="button" id="btn1" value="버튼1"/>
+        <input type="button" id="btn2" value="버튼2"/>
+    </body>
+</html>
