@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>이름과 전화번호를 입력하세요</h2>
+	<form action="01_01.html">
+		이름 : <input type="text" name="name"><br>
+		전화번호 : 
+		<select name="local">
+			<option value="서울">서울</option>
+			<option value="경기">경기</option>
+			<option value="강원">강원</option>			
+		</select>
+		- <input type="text" name="tel"><br>
+		<input type="submit" value="입력완료">
+		
+		<!-- 
+		form 태그 안엥서는 하나의 submit버튼만 적용할 수 있다
+		때문에 또 다른 이동 버튼이 필요할 경우에는 input 태그의 button 속성값을 활용
+		 -->
+		 <input type="button" value="뒤로가기" onclick="window.location.href='01_02.jsp'">
+	</form>
+</body>
+</html>
