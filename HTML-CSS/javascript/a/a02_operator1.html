@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>비교 연산자</title>
+    </head>
+
+    <body>
+        <script>
+            var a = 10;
+            var b = 20;
+            var c = 10;
+            var f = "20";
+            var result;
+
+            result = a>b;
+            document.write(result, "<br>");
+
+            result = a<b;
+            document.write(result, "<br>");
+
+            result = a <= b;
+            document.write(result, "<br>");
+
+            result = b==f;
+            document.write(result, "<br>");
+
+            result = a!=b;
+            document.write(result, "<br>");
+
+            result = b===f; // ===은 ==와 같지만 변수의 타입까지 같은지 확인
+            document.write(result, "<br>");
+        </script>
+    </body>
+</html>

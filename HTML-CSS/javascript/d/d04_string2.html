@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>문자열</title>
+    </head>
+
+    <body>
+        <script>
+            var s = 'aBcDeF';
+            var result1 = s.toLowerCase();
+            var result2 = s.toUpperCase();
+            document.writeln(result1);
+            document.writeln(result2);
+
+            document.write("<br><br>id와 pw를 입력받고 로그인 출력");
+            document.write("<br>조건) 대소문자 상관없이 전부 로그인 허용");
+        </script>
+        <form>
+            <fieldset>
+                <label>아이디 : <input type="text" id="user_id" size="10"></label>
+                <label>비밀번호 : <input type="text" id="user_pw" size="10"></label>
+                <input type="submit" value="로그인" onclick="alert('로그인 성공')">
+            </fieldset>
+        </form>
+    </body>
+</html>

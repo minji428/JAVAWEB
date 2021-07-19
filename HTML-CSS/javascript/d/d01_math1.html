@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>수학객체</title>
+    </head>
+
+    <body>
+        <script>
+            var num = 2.6234;
+
+            var maxNum = Math.max(10, 5, 8, 30),
+                minNum = Math.min(10, 5, 8, 30),
+                roundNum = Math.round(num),     // 반올림
+                floorNum = Math.floor(num),     // 내림
+                ceilNum = Math.floor(num),      // 올림
+                rndNum = Math.random(),         // 랜덤은 소수점으로 나오기 때문에 곱하기
+                                                //  숫자로 범위를 정함
+                piNum = Math.PI;
+
+            document.write(maxNum, "<br>");
+            document.write(minNum, "<br>");
+            document.write(roundNum, "<br>");
+            document.write(floorNum, "<br>");
+            document.write(ceilNum, "<br>");
+            document.write(rndNum, "<br>");
+            document.write(piNum, "<br>");
+
+
+            for (var i = 0; i< 50; i++){
+                var ran1 = Math.floor(Math.random()*10);    // 0~9
+                document.write(ran1, " ");
+            }
+
+            document.write("<br/>");
+            document.writeln("문제1) 1~3사이의 랜덤 숫자 50개 출력");
+            document.write("<br/>");
+            for (var i =0; i<50; i++){
+                var ran1 = Math.floor(Math.random()*3+1);
+                document.write(ran1, " ");
+            }
+
+            document.write("<br/>");
+            document.writeln("문제2) -3~7사이의 랜덤 숫자 50개 출력");
+            document.write("<br/>");
+            for (var i=0; i<50; i++){
+                var ran1 = Math.floor(Math.random()*11-3);
+                document.write(ran1, " ");
+            }
+        </script>
+    </body>
+</html>

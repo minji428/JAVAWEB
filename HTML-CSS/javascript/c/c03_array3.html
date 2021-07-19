@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>배열</title>
+    </head>
+
+    <body>
+        <script>
+            var yellowArr = ["미금", "정자", "수서"];
+
+            // splice(시작위치, 삭제할 개수)
+
+            yellowArr.splice(1,2);  // 1번부터 2개 삭제
+            console.log(yellowArr); // 미금
+
+            var greenArr = ["교대", "방배", "강남", "미금", "정자", "수서"];
+
+            greenArr.splice(3,1);   // 3번부터 1개 삭제
+            console.log(greenArr);  // 교대, 방배, 강남, 정자, 수서
+        </script>
+    </body>
+</html>

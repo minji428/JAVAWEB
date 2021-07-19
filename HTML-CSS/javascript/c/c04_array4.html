@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>배열</title>
+    </head>
+
+    <body>
+        <script>
+            var myArray = [10,7,23,99,169,19,11,1];
+            // 숫자의 앞에 자리 부터 정렬을 진행한다.
+            // 주로 문자열에서만 적용됨(숫자는 아래처럼 사용)
+
+            myArray.sort()
+            document.writeln(myArray, "<br>");
+
+            // 오름차순 정렬
+            myArray.sort(function(i,j){ return i-j;});
+            document.writeln(myArray, "<br>");
+
+            // 내림차순 정렬
+            myArray.sort(function(i,j){ return j-i;});
+            document.writeln(myArray);
+        </script>
+    </body>
+</html>

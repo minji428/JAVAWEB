@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+
+    </head>
+
+    <body>
+        <script>
+            function jsonTest(){
+            var s = '[' +
+            '{"name":"Hong","age":"21" },' +
+            '{"name":"Kim","age":"22" },' +
+            '{"name":"Park","age":"23" }]';
+
+            var students = JSON.parse(s);
+            
+            /*
+                JSON은 딕셔너리처럼 만들라는 명
+            */
+            students[1].name = "Lee";
+            document.getElementById("name").innerHTML = students[1].name;
+            document.getElementById("age").innerHTML = students[1].age;
+        }         
+        </script>
+
+        <h4>학생 명단</h4>
+        <p>
+            이름: <div id="name"></div>&nbsp 
+            나이: <div id="age"></div>
+            <script>
+                jsonTest();
+            </script>
+        </p>
+    </body>
+</html>
