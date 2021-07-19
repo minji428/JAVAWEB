@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>웹 폼</title>
+        <style>
+            ul{
+                list-style: none;
+            }
+            li{
+                margin: 10px;   /* 왼쪽에서 오른쪽으로 10px만큼 밀어서 작성 */
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>회원 가입을 환영합니다</h1>
+        <form>
+            <!--<ul><li>를 하면 .이 생기지만
+                위에 head에서 style에 list-style을 none을 해놨기 때문에
+                생기지 않음-->
+            <ul>
+                <li><label>아이디: <input type="text" id="user_id"
+                    size="10" minlength="4" maxlength="15"></label>
+                    <small style="color:red;"> 4~15자리 이내의 영문과 숫자</small></li>
+                <li><label>이메일 : <input type="email" name="user_email"></label></li>
+                <li><label>비밀번호 : <input type="password" name="user_pw"></label></li>
+                <li><label>비밀번호 확인 : <input type="password" name="check_pw"></label></li>
+                <li><input type="submit" value="회원가입"></li>
+            </ul>
+        </form>
+    </body>
+</html>
