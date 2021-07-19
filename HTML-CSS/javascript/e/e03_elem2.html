@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        
+    </head>
+
+    <body>
+        <script>
+           function process(){
+               var obj = document.myform.text;
+               alert(obj.value);
+           } 
+        </script>
+
+        <form name="myform">
+            <input type="text" name="text">
+            <input type="button" value="제출" onclick="process()">
+        </form>
+    </body>
+</html>

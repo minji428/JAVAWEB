@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>함수</title>
+    </head>
+
+    <body>
+        <script>
+            function sum(num1, num2){
+                var tot = 0;
+                for(var i=num1; i<num2; i++){
+                    tot += i;
+                }
+                document.write(tot);
+            }
+        </script>
+
+        <form>
+            <input type="button" value="눌러보세요" onclick="sum(1,5)">
+        </form>
+    </body>
+</html>
